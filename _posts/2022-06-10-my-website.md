@@ -1,7 +1,7 @@
 ---
 layout: posts
-title:  "Titolo nr 2!"
-permalink: /posts/postnr2/
+title:  "This Website!"
+permalink: /posts/my-website/
 categories: Posts
 ---
 
