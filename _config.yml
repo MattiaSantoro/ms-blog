@@ -135,6 +135,12 @@ author:
 # Site Footer
 footer:
   links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:mattia.santoro01@gmail.com"
+    - label: "Linkedin"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/mattia-santoro-9a52111b3/"
     - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       # url:
