@@ -6,4 +6,5 @@ permalink: /contact/
 author: true
 ---
 
-Contact me!
+
+<p>You can reach me via email: <strong><em><a href="mailto:mattia.santoro01@gmail.com">mattia.santoro01@gmail.com</a></em></strong></p>
