@@ -196,6 +196,7 @@ figure {
   align-items: flex-start;
   flex-wrap: wrap;
   margin: 2em 0;
+  //margin: 0 0;
 
   img,
   iframe,
@@ -311,6 +312,9 @@ nav {
 /*
    Global animation transition
    ========================================================================== */
+blockquote{      //modifica del margine con l'aiuto di nakov
+     margin-top: 0px;
+   }
 
 b,
 i,
