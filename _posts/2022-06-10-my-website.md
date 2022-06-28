@@ -7,7 +7,7 @@ toc: true
 ---
 
 Welcome to my first ever post!\
-Or maybe should I print some "Hello World!", as a nerd like me would do.\
+Or maybe I should print some "Hello World!", like a nerd like me would.\
 :)\
-At this time I'm building and designing my next posts. Get back for more.\
+Right now I'm building and designing my next posts. Come back for more.\
 Until then... *Ciao!*
