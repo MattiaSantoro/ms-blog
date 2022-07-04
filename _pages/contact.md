@@ -3,7 +3,7 @@ title: "Contact"
 layout: single
 sitemap: true
 permalink: /contact/
-author: true
+author_profile: true
 ---
 
 
