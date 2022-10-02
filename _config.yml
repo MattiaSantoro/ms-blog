@@ -16,14 +16,14 @@ minimal_mistakes_skin    : "contrast" # "air", "aqua", "contrast", "dark", "dirt
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Santo's Website"
+title                    : "matsan.it"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Mattia Santoro"
 description              : "Mattia Santoro personal page"
-url                      : "https://mattiasantoro.github.io" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
+url                      : "https://www.matsan.it" # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : # the subpath of your site, e.g. "/blog"
-repository               : # GitHub username/repo-name e.g. "mmistakes/minimal-mistakes"
+repository               : "mattiasantoro/mattiasantoro.github.io"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
 logo                     : "/assets/images/SM-logo.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
