@@ -1,7 +1,7 @@
 ---
 layout: posts
-title:  "This Website!"
-permalink: /posts/my-website/
+title:  "Hello World!"
+permalink: /posts/my-first-post/
 categories: Posts
 toc: true
 ---
