@@ -16,7 +16,7 @@ minimal_mistakes_skin    : "contrast" # "air", "aqua", "contrast", "dark", "dirt
 
 # Site Settings
 locale                   : "en-US"
-title                    : "matsan.it"
+title                    : "MATSAN.it"
 title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : "Mattia Santoro"
@@ -96,10 +96,10 @@ social:
 
 # Analytics
 analytics:
-  provider               : google # false (default), "google", "google-universal", "google-gtag", "custom"
+  provider               : google-gtag # false (default), "google", "google-universal", "google-gtag", "custom"
   google:
     tracking_id          : G-CE058FHH3V
-    anonymize_ip         : true # true, false (default)
+    anonymize_ip         : false # true, false (default)
 
 
 # Site Author
