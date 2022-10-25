@@ -25,7 +25,7 @@ url                      : "https://www.matsan.it" # the base hostname & protoco
 baseurl                  : # the subpath of your site, e.g. "/blog"
 repository               : "mattiasantoro/mattiasantoro.github.io"
 teaser                   : # path of fallback teaser image, e.g. "/assets/images/500x300.png"
-logo                     : "/assets/images/matsan-logo.png"
+logo                     : "/assets/images/logo_lowercase.png"
 masthead_title           : # overrides the website title displayed in the masthead, use " " for no title
 breadcrumbs              : true # true, false (default)
 words_per_minute         : 200
