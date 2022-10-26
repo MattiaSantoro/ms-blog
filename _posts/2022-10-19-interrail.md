@@ -12,7 +12,7 @@ header:
   caption: "A pic I took in Geneva on my way back home"
 ---
 
-<i class="fa fa-train"></i>  _My interrail trip._
+<i class="fa fa-train"></i>  _A piece on my Interrail trip I called **Septerrail**, Interrail in September_
 {: .notice--primary}
 
 <p style="text-align:center;"><img src="{{ "/assets/images/posts/interrail/me_backpacker.jpg" | absolute_url }}" width="60%" hspace="5"></p>
@@ -30,9 +30,9 @@ Interrail is all about a backpack and some points and ideas on a map. You start 
 I love people and I consider myself an extrovert person, don't get me wrong. But I feel like is very important in life and in relations between you and others to know yourself, having time and experiences only for you helps you to be more comfortable with yourself.
 
 ## The planning
-My process was really simple. I did my last exam of the summer term on the 6th of September- pretty late but it is what it is at TUM :)
+My planning process was really simple. I did my last exam of the summer term on the 6th of September- pretty late but it is what it is at TUM :)
 
-After some after-exams celebrations with my friends, I went home to Italy and made my research for destinations and nice places in Europe. Actually, a very simple task if you know the beauty of the Old Continent. I prepared my travel companion, a 36 liters Osprey backpack. It weighed 10 kilos and I'm quite proud of it knowing later on my trip people doing the same thing as I did with 70 liters of backpacks, and I didn't miss anything. I had with me all I needed and I felt like with it I was ready to go anywhere and forever. I also clipped a moon brooch to it, a nice present I received from my sister just before leaving for my adventure.
+After some after-exams celebrations with my friends, I went home to Italy and made my research for destinations and nice places in Europe. A very simple task if you know the beauty of the Old Continent. I prepared my travel companion, a 36 liters Osprey backpack. It weighed 10 kilos and I'm quite proud of it knowing later on my trip people doing the same thing as I did with 70 liters of backpacks, and I didn't miss anything. I had with me all I needed and I felt like with it I was ready to go anywhere and forever. I also clipped a moon brooch to it, a nice present I received from my sister just before leaving for my adventure.
 
 <p style="text-align:center;"><img src="{{ "/assets/images/posts/interrail/zaino_treno.jpg" | absolute_url }}" width="60%" hspace="5"></p>
 
