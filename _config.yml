@@ -105,7 +105,7 @@ analytics:
 # Site Author
 author:
   name             : "Mattia Santoro"
-  avatar           : "/assets/images/me_levitum.jpg"
+  avatar           : "/assets/images/profile_pic.jpg"
   bio              : "An Italian engineering student writing about nice things"
   location         : "Munich, Germany"
   email            : #"mattia.santoro01@gmail.com"
@@ -115,7 +115,7 @@ author:
       url: "mailto:blog.matsan.it@gmail.com"
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
-      url: "https://www.linkedin.com/in/mattia-santoro-9a52111b3/"
+      url: "https://www.linkedin.com/in/mattia-santoro"
     - label: "Website"
       icon: "fas fa-fw fa-link"
       # url: "https://your-website.com"
