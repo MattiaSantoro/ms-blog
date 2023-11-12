@@ -255,7 +255,7 @@ Here can you find everything you'll need to complete your version of my design. 
 
 <!-------------------------------- FOOTER --------------------------------->
 
-[1]: https://LINK
+[1]: https://www.matsan.it/posts/QuattroZero/#the-files
 [2]: https://www.reddit.com/r/MechanicalKeyboards/
 [3]: https://www.matsan.it/posts/arduino-uno/
 [4]: https://cdn.sparkfun.com/datasheets/Components/Switches/MX%20Series.pdf
