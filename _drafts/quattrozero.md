@@ -7,13 +7,20 @@ toc: true
 toc_sticky: true
 
 header:
-  overlay_image: /assets/images/posts/40/matsan_after_laser.jpg
+  overlay_image: /assets/images/posts/40/endresult.jpg
   overlay_filter: 0.4
-  caption: "Coming together!"
+  caption: "QuattroZero looking goood!"
 ---
 
 _In this new episode of **How I built my own thing from scratch** I decided to combine a lot of the good things I learned through my recent times and come up with something I could challenge myself and in the end have an object I could use every day. In this post, you will see how I combined 3D Design, 3D printing, laser cutting, soldering, coding, and much more to come up with this amazing result._
 {: .notice--primary}
+
+<p style="text-align:center;"><img src="{{ "/assets/images/posts/40/endresult-cropped.jpg" | absolute_url }}" width="100%" hspace="5"></p>
+
+<i class="far fa-file-alt"></i> QuattroZero
+{: .notice--info}
+{: .text-justify}
+
 
 _IMPORTANT: You will find my files and all you need to replicate my result through [this link][1]. If you go on building my version or some other make sure to contact me. I want to see your awesome mech keeb!_
 {: .notice--primary}
@@ -22,7 +29,7 @@ _IMPORTANT: You will find my files and all you need to replicate my result throu
 Before deep diving into my project, I think it's a good idea to get ourselves on the same page.
 So, what is a mechanical keyboard? The quick answer it's something like this: mechanical keyboards are an improved and better experience in comparison to your typical cheap office keyboard. Mech Keeb utilizes mechanical switches, tuned stabilizers, high-quality plastic for the keycaps, and much more intentionality in the typing experience. All of this is done to achieve the most pleasurable experience when typing.
 Nowadays we are investing a lot of time sitting in front of a PC, therefore, I think it's a good idea to invest some time in high-quality gadgets like a keyboard and mouse to create a better environment while typing.
-If all of this resonates with you I encouraged you to check the subreddit [r/mechanicalkeyboard][2] to take a look at the numerous alternatives there are in this world. Now let's get to the good stuff.
+If all of this resonates with you I encouraged you to check the subreddit [r/MechanicalKeyboards][2] to take a look at the numerous alternatives there are in this world. Now let's get to the good stuff.
 
 ## My choices
 For this project, I decided to go with a **hand-wired, stacked acrylic, tactile, ortho-linear 40% keyboard with PBT keycaps**. Let's break this down.
@@ -39,7 +46,7 @@ Now it's time to illustrate my journey and how it all came to be.
 
 <p style="text-align:center;"><img src="{{ "/assets/images/posts/40/inventor.png" | absolute_url }}" width="80%" hspace="5"></p>
 
-<i class="far fa-file-alt"></i> My 3D model in Inventor.
+<i class="far fa-file-alt"></i> My 3D-model in Inventor.
 {: .notice--info}
 {: .text-justify}
 
@@ -52,16 +59,16 @@ On the plate, I designed the cut-outs for the keys and stabilizers. I used [this
 {: .notice--info}
 {: .text-justify}
 
-After the plate, I went down and designed the other layers. I made sure I got a good way of bolting everything together with M3 bolts and nuts. I was quite happy with the result. It was important to have a cut-out for the USB C connection. I decided I would print a hub to make everything look good and tight.
+After the plate, I went down the layers and designed the other levels. I made sure I got a good way of bolting everything together with M3 bolts and nuts. I was quite happy with the result. It was also important, to make it look fancier, to have a cut-out for the USB C connection. I decided I would print a hub to make everything look good and tight.
 
 <p style="text-align:center;"><img src="{{ "/assets/images/posts/40/bolts_nuts.png" | absolute_url }}" width="80%" hspace="5"></p>
 
-<i class="far fa-file-alt"></i> My fixturing concept.
+<i class="far fa-file-alt"></i> My mounting concept: A nut in the middle and bolts at each side. I designed the cut-offs in the plexiglass to house the bolts.
 {: .notice--info}
 {: .text-justify}
 
 ### The Software
-The firmware we are going to flash on our microcontroller is written in C and following some guidelines makes everything easier. You have to check out [QMK][], an awesome open-source tool with a big and helpful community. You'll find numerous guides on how to create the perfect firmware for your keyboard.
+The firmware we are going to flash on our microcontroller is written in C and following some guidelines makes everything easier. You have to check out [QMK][5], an awesome open-source tool with a big and helpful community. You'll find numerous guides on how to create the perfect firmware for your keyboard.
 The core file in every config looks something like this. This is my keymap.c file for my QuattroZero.
 It looks intimidating but it's pretty simple. We are declaring different states and layers and explaining how they are constituted.
 
@@ -144,45 +151,100 @@ layer_state_t layer_state_set_user(layer_state_t state) {
 ```
 
 ### The Manufacturing
-Let's begin!
+The hands-on part. Let's begin!
 
 #### Laser-Cutting
-I created Laser-cutting Machine compatible files with the help of Inventor and proceeded to cut my layers. I learned it is vital to ensure a good quality cut that you make a lot of tests. With the help of some experienced friends (*Thanks Andrew! :)* ), I got the quality I needed. Look for the engraving below!
+I created laser-cutting machine compatible files with the help of Inventor and proceeded to cut my layers. I learned it is vital to ensure a good quality cut that you make a lot of tests. I got the quality I needed with the help of some experienced friends - *Thanks Andrew! :)*
+
+Look at this beauty! My logo's engraving is my favorite part.
 
 <p style="text-align:center;"><img src="{{ "/assets/images/posts/40/laser1.jpg" | absolute_url }}" width="80%" hspace="5"></p>
 
-<i class="far fa-file-alt"></i> Laser.
+<i class="far fa-file-alt"></i> Telling the laser machine what to do
 {: .notice--info}
 {: .text-justify}
+
 
 <p style="text-align:center;"><img src="{{ "/assets/images/posts/40/laser2.jpg" | absolute_url }}" width="80%" hspace="5"></p>
 
-<i class="far fa-file-alt"></i> Laser.
+<i class="far fa-file-alt"></i> The beast!
 {: .notice--info}
 {: .text-justify}
 
+
 <p style="text-align:center;"><img src="{{ "/assets/images/posts/40/laser.jpg" | absolute_url }}" width="80%" hspace="5"></p>
 
-<i class="far fa-file-alt"></i> Laser.
+<i class="far fa-file-alt"></i> The result
+{: .notice--info}
+{: .text-justify}
+
+
+<p style="text-align:center;"><img src="{{ "/assets/images/posts/40/back.jpg" | absolute_url }}" width="100%" hspace="5"></p>
+
+<i class="far fa-file-alt"></i> The back is engraved with this website's logo!
 {: .notice--info}
 {: .text-justify}
 
 
 #### 3D Printing
-After that, I exported out of Inventor the .stl file for the USB C Hub and proceeded with the print in multiple colors to see which one was my favorite.
+After that, I exported from Inventor the .stl file for the USB C Hub and proceeded with the print in multiple colors to see which one was my favorite. I went with white.
 
-              Foto Hub
+<p style="text-align:center;"><img src="{{ "/assets/images/posts/40/usbc-hub.png" | absolute_url }}" width="80%" hspace="5"></p>
+
+<i class="far fa-file-alt"></i> My USB-C hub in the Ultimaker Cura printing software
+{: .notice--info}
+{: .text-justify}
 
 #### The soldering
 This part was tough. A lot to solder. The goal is to wire up each row and column and feed these wires into the microcontroller.
 With proper software, the microcontroller is able to identify the coordinates of the pressed key. To make sure there are no ghost clicks is important to have diodes paired with each key. This way current can flow only one way and we make sure that only one combination of row and column numbers corresponds to one key.
 
-            Foto soldering
+
+
+<p style="text-align:center;"><img src="{{ "/assets/images/posts/40/before-soldering.jpg" | absolute_url }}" width="80%" hspace="5"></p>
+
+<i class="far fa-file-alt"></i> Before soldering - fit test
+{: .notice--info}
+{: .text-justify}
+
+
+
+<p style="text-align:center;"><img src="{{ "/assets/images/posts/40/after-soldering.jpg" | absolute_url }}" width="80%" hspace="5"></p>
+
+<i class="far fa-file-alt"></i> After soldering - it works!
+{: .notice--info}
+{: .text-justify}
 
 ### Building everything together
 This is the fun part of every project: the moment everything comes together. It is so satisfying to see the result of what some (a lot) hours in the free time can lead to. This was my favorite project so far and I can't wait to iterate and make some perfections!
 
-    Foto Finale
+<p style="text-align:center;"><img src="{{ "/assets/images/posts/40/building-together.jpg" | absolute_url }}" width="100%" hspace="5"></p>
+
+<i class="far fa-file-alt"></i> Ready to close the case
+{: .notice--info}
+{: .text-justify}
+
+
+<p style="text-align:center;"><img src="{{ "/assets/images/posts/40/endresult-cropped.jpg" | absolute_url }}" width="100%" hspace="5"></p>
+
+<i class="far fa-file-alt"></i> QuattroZero
+{: .notice--info}
+{: .text-justify}
+
+
+
+<p style="text-align:center;"><img src="{{ "/assets/images/posts/40/other-view.jpg" | absolute_url }}" width="100%" hspace="5"></p>
+
+<i class="far fa-file-alt"></i> QuattroZero
+{: .notice--info}
+{: .text-justify}
+
+
+<p style="text-align:center;"><img src="{{ "/assets/images/posts/40/back.jpg" | absolute_url }}" width="100%" hspace="5"></p>
+
+<i class="far fa-file-alt"></i> The back is engraved with this website's logo!
+{: .notice--info}
+{: .text-justify}
 
 ## The Files
 Here can you find everything you'll need to complete your version of my design. Make sure to show me your results if you plan to do this yourself!
@@ -194,4 +256,7 @@ Here can you find everything you'll need to complete your version of my design. 
 <!-------------------------------- FOOTER --------------------------------->
 
 [1]: https://LINK
-https://cdn.sparkfun.com/datasheets/Components/Switches/MX%20Series.pdf
+[2]: https://www.reddit.com/r/MechanicalKeyboards/
+[3]: https://www.matsan.it/posts/arduino-uno/
+[4]: https://cdn.sparkfun.com/datasheets/Components/Switches/MX%20Series.pdf
+[5]: https://docs.qmk.fm/#/
