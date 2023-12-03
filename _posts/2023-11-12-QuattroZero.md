@@ -249,8 +249,7 @@ This is the fun part of every project: the moment everything comes together. It 
 ## The Files
 Here can you find everything you'll need to complete your version of my design. Make sure to show me your results if you plan to do this yourself!
 
-*Coming Soon*
-
+[Click here! Heading to GitHub...][6]
 
 
 <!-------------------------------- FOOTER --------------------------------->
@@ -260,3 +259,4 @@ Here can you find everything you'll need to complete your version of my design. 
 [3]: https://www.matsan.it/posts/arduino-uno/
 [4]: https://cdn.sparkfun.com/datasheets/Components/Switches/MX%20Series.pdf
 [5]: https://docs.qmk.fm/#/
+[6]: https://github.com/MattiaSantoro/QuattroZero
