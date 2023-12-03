@@ -2,11 +2,11 @@
 main:
   - title: "Posts"
     url: /categories/
-  - title: "Books"
-    url: /books/
+#  - title: "Books"
+#    url: /books/
   - title: "Contact"
     url: /contact/
-  - title: "About me"
+  - title: "About"
     url: /about/
   # - title: "Sitemap"
   #   url: /sitemap/
