@@ -46,7 +46,7 @@ The other two key tools I used are [Matplotlib][3] (for creating the plots) and 
 Deploying the app and making it accessible on the Internet is the second phase of the project.
 Considering how lightweight and resource-efficient the web app is, I was hoping to find an easy hosting solution.
 
-Starting out, I looked into free options to host the demo while researching better solutions (like self-hosting?)
+Starting out, I looked into free options to host the demo while researching better solutions (like self-hosting?).
 I considered [Render.com][5], but ultimately landed on [Koyeb.com][6]. These tools make it easy to deploy from a GitHub repository, but, as expected, the free plans are limited in terms of performance and fluidity.
 I will look into better (paid) options, but for now, I'm okay with having the demo app hosted there.
 
