@@ -13,7 +13,7 @@ source "https://rubygems.org"
 
 # To upgrade, run `bundle update`.
 
-gem "jekyll"
+gem "jekyll", "~> 4.3"
 gem "minimal-mistakes-jekyll"
 gem "webrick"
 
