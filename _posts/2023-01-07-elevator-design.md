@@ -9,7 +9,7 @@ toc_sticky: true
 header:
   overlay_image: /assets/images/posts/elevator-design/tail_and_elevator_geometry.png
   overlay_filter: 0.3
-  caption: "A pic I took in Geneva on my way back home"
+  caption: "Horizontal tail and elevator geometry"
   teaser: /assets/images/posts/elevator-design/tail_and_elevator_geometry.png
 ---
 _I'm working on a project (see [levitum.de][1]) and needed to learn about the design of control surfaces in air vehicles, in particular about Elevator Design. Since my .md file with my notes was sitting in my Obsidian vault and doing nothing I thought I could share my notes and maybe be useful to someone. Everything you find below is grabbed from the great book [Aircraft Design (Sadraey)][2]. The book is amazing, you could build an entire plane just by reading every amazing chapter, for now, my focus was just Elevators. Some requirements other than what is listed below (such as takeoff requirements) were not important for me since I am interested in eVTOL for my current task.
