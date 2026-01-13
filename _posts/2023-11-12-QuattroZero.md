@@ -10,6 +10,7 @@ header:
   overlay_image: /assets/images/posts/40/endresult.jpg
   overlay_filter: 0.4
   caption: "QuattroZero looking goood!"
+  teaser: /assets/images/posts/40/endresult-cropped.jpg
 ---
 
 _In this new episode of **How I built my own thing from scratch** I decided to combine a lot of the good things I learned through my recent times and come up with something I could challenge myself and in the end have an object I could use every day. In this post, you will see how I combined 3D Design, 3D printing, laser cutting, soldering, coding, and much more to come up with this amazing result._

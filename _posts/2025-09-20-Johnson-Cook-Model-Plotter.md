@@ -7,9 +7,10 @@ toc: true
 toc_sticky: true
 
 header:
-  overlay_image: /assets/images/posts/jc-plotter/light-1.png
+  overlay_image: /assets/images/posts/jc-plotter/overhead_teaser.png
   overlay_filter: 0.4
   caption: "A screenshot showing the web app in action!"
+  teaser: /assets/images/posts/jc-plotter/overhead_teaser.png
 ---
 
 _In this post, I will present a project I worked on over the last few months. Months ago, when I was looking for a tool capable of plotting Johnson-Cook model curves based on Johnson-Cook parameters, I couldn't find one, so... I made one! Hopefully, my web app will come in handy for anyone who finds themselves in the same situation in the future! <br> Disclaimer: This is a niche application in the field of materials science engineering! But keep reading!_
@@ -23,6 +24,7 @@ _In this post, I will present a project I worked on over the last few months. Mo
 
 ## App
 [Click here to head to the web app: **Johnson-Cook Model Plotter**!][1]
+<br>It may take up to 10-20 seconds to load the app after clicking the link.
 {: .notice--primary}
 
 ## Background
@@ -36,7 +38,7 @@ A typical plot of the Johnson-Cook model shows flow stress versus plastic strain
 While searching the internet for websites offering plots of Johnson-Cook curves based on given parameters, I could not find one.
 For that reason, I decided to create one myself and make it available to anyone, so that someone in my position in the future can take advantage of this resource.
 
-## Tools I used
+## Tools
 This project was also an opportunity for me to experiment with a tool that I had been interested in trying out for a while. This project was the perfect application, so I jumped in and started experimenting.
 
 The entire web application is written in **Python** and uses the [Panel][2] library (by HoloViz) for the dashboard and GUI. Panel makes it very easy to code and build good-looking dashboards, plotters, and other visualization tools. I can't recommend this enough!

@@ -10,6 +10,7 @@ header:
   overlay_image: /assets/images/posts/arduino/schematics.png
   overlay_filter: 0.4
   caption: "In the background my sch file. Keep reading!"
+  teaser: /assets/images/posts/arduino/teaser.jpg
 ---
 
 _I found this amazing course in the selection of my University courses. It is a Master's level course, but I am glad I chose this one even if I am still in my Bachelor's. I learned how to build and design an **Arduino** Uno board starting from the selection of the components. I created the **schematics**, the **PCB**, the **code**, and the software for it. I learned about PCB design and how to use a tool like **Autodesk Eagle**. I developed my **soldering** skills. And with all of that came also a 1,0. The best grade in the German University System!_

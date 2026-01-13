@@ -10,6 +10,7 @@ header:
   overlay_image: /assets/images/posts/interrail/train_station.jpg
   overlay_filter: 0.3
   caption: "A pic I took in Geneva on my way back home"
+  teaser: /assets/images/posts/interrail/teaser.jpg
 ---
 
 <i class="fa fa-train"></i>  _A piece on my Interrail trip I called **Septerrail**, Interrail in September_

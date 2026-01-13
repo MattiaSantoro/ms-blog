@@ -6,10 +6,11 @@ categories: Posts
 toc: true
 toc_sticky: true
 
-#header:
-#  overlay_image: /assets/images/posts/elevator-design/train_station.jpg
-#  overlay_filter: 0.3
-#  caption: "A pic I took in Geneva on my way back home"
+header:
+  overlay_image: /assets/images/posts/elevator-design/tail_and_elevator_geometry.png
+  overlay_filter: 0.3
+  caption: "A pic I took in Geneva on my way back home"
+  teaser: /assets/images/posts/elevator-design/tail_and_elevator_geometry.png
 ---
 _I'm working on a project (see [levitum.de][1]) and needed to learn about the design of control surfaces in air vehicles, in particular about Elevator Design. Since my .md file with my notes was sitting in my Obsidian vault and doing nothing I thought I could share my notes and maybe be useful to someone. Everything you find below is grabbed from the great book [Aircraft Design (Sadraey)][2]. The book is amazing, you could build an entire plane just by reading every amazing chapter, for now, my focus was just Elevators. Some requirements other than what is listed below (such as takeoff requirements) were not important for me since I am interested in eVTOL for my current task.
 I really enjoyed learning about this topic._
@@ -72,7 +73,7 @@ b_E/b_h = 0.8–1,
 C_E/C_h = 0.2–0.4,
 δ_Emax_up = −25 deg and δ_Emax_down = +20 deg
 
-<p style="text-align:center;"><img src="{{ "/assets/images/posts/elevator-design/tail and elevator geometry.png" | absolute_url }}" width="100%" hspace="5"></p>
+<p style="text-align:center;"><img src="{{ "/assets/images/posts/elevator-design/tail_and_elevator_geometry.png" | absolute_url }}" width="100%" hspace="5"></p>
 
 #### Principles of Elevator Design
 The elevator is flap-like and is deflected up and down. With this deflection, the camber of the airfoil of the tail is changed, and consequently the tail lift coefficient (C_Lh ) is changed. The main objective of elevator deflection is to increase or decrease the tail plane lift and hence the tail plane

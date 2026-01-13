@@ -108,11 +108,11 @@ author:
   avatar           : "/assets/images/profile.jpeg"
   bio              : "An Italian engineering student writing about nice things"
   location         : "Munich, Germany"
-  email            : #"mattia.santoro01@gmail.com"
+  email            : #"email"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:blog.matsan.it@gmail.com"
+      url: "mailto:hi@matsan.it"
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/mattia-santoro"
@@ -137,7 +137,7 @@ footer:
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:blog.matsan.it@gmail.com"
+      url: "mailto:hi@matsan.it"
     - label: "Linkedin"
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/mattia-santoro"
@@ -227,7 +227,7 @@ sass:
 
 # Outputting
 permalink: /:categories/:title/
-paginate: 5 # amount of posts to show
+paginate: 8 # amount of posts to show
 paginate_path: /page:num/
 timezone: # https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 
