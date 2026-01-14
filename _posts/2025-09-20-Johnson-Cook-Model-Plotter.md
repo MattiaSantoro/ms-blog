@@ -1,7 +1,7 @@
 ---
 #layout: posts
 permalink: /posts/jc-plotter/
-title: "A tool for plotting Johnson-Cook Model curves"
+title: "I created a tool for plotting Johnson-Cook Model curves"
 categories: Posts
 toc: true
 toc_sticky: true
