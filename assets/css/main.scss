@@ -7,3 +7,46 @@ search: false
 
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
+
+/* Grid styling for posts to appear as cards */
+
+/* Target the card container in grid view */
+.grid__item .archive__item {
+  background: #ffffff;    /* Essential for the shadow to be visible */
+  border-radius: 4px;     /* Much sharper corners (standard minimal look) */
+  //box-shadow: 0 1px 3px rgba(0,0,0,0.08); /* Very tight, low-profile shadow */
+  transition: all 0.2s ease-out;
+  height: 100%;
+  overflow: hidden;       /* Keeps content inside the border */
+}
+
+/* Dark Mode tweaks (if you use dark skin) */
+.dark-theme .grid__item .archive__item {
+  background: #1d1f21;
+  border-color: #333;
+  box-shadow: none; /* Dark mode often looks better flat or with simple borders */
+}
+
+/* Hover Effect: Subtle sharpness */
+.grid__item .archive__item:hover {
+  border-color: #ccc; /* Darken border slightly on hover */
+  box-shadow: 0 4px 12px rgba(0,0,0,0.15); /* Shadow grows slightly */
+  transform: translateY(-5px); /* Lift effect */
+}
+
+/* Fix the teaser image */
+.archive__item-teaser {
+  margin-bottom: 0; /* Remove gap between image and text */
+}
+
+/* Text Padding */
+.archive__item-title, 
+.archive__item-excerpt {
+  padding: 4px 2px; /* Consistent spacing */
+  margin-bottom: 0;
+}
+
+.archive__item-excerpt {
+  padding-top: 0; /* Prevents double padding between title and text */
+  //font-size: 0.9em; /* Optional: makes the summary text slightly more compact */
+}
