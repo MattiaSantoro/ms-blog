@@ -11,6 +11,43 @@ header:
   overlay_filter: 0.4
   caption: "QuattroZero looking goood!"
   teaser: /assets/images/posts/40/teaser.jpg
+
+galleryLaserCutting:
+  - url: /assets/images/posts/40/laser1.jpg
+    image_path: /assets/images/posts/40/laser1.jpg
+    alt: "Telling the laser machine what to do"
+  - url: /assets/images/posts/40/laser2.jpg
+    image_path: /assets/images/posts/40/laser2.jpg
+    alt: "The beast!"
+  - url: /assets/images/posts/40/matsan_after_laser.jpg
+    image_path: /assets/images/posts/40/matsan_after_laser.jpg
+    alt: "The back"
+  - url: /assets/images/posts/40/laser.jpg
+    image_path: /assets/images/posts/40/laser.jpg
+    alt: "The result"
+
+gallerySoldering:
+  - url: /assets/images/posts/40/before-soldering.jpg
+    image_path: /assets/images/posts/40/before-soldering.jpg
+    alt: "Before soldering - fit test"
+  - url: /assets/images/posts/40/after-soldering.jpg
+    image_path: /assets/images/posts/40/after-soldering.jpg
+    alt: "After soldering - it works"
+
+galleryFinal:
+  - url: /assets/images/posts/40/building-together.jpg
+    image_path: /assets/images/posts/40/building-together.jpg
+    alt: "Ready to close the case"
+  - url: /assets/images/posts/40/endresult-cropped.jpg
+    image_path: /assets/images/posts/40/endresult-cropped.jpg
+    alt: "QuattroZero"
+  - url: /assets/images/posts/40/other-view.jpg
+    image_path: /assets/images/posts/40/other-view.jpg
+    alt: "QuattroZero"
+  - url: /assets/images/posts/40/back.jpg
+    image_path: /assets/images/posts/40/back.jpg
+    alt: "The back is engraved with this website's logo!"
+
 ---
 
 _In this new episode of **How I built my own thing from scratch** I decided to combine a lot of the good things I learned through my recent times and come up with something I could challenge myself and in the end have an object I could use every day. In this post, you will see how I combined 3D Design, 3D printing, laser cutting, soldering, coding, and much more to come up with this amazing result._
@@ -70,10 +107,16 @@ After the plate, I went down the layers and designed the other levels. I made su
 
 ### The Software
 The firmware we are going to flash on our microcontroller is written in C and following some guidelines makes everything easier. You have to check out [QMK][5], an awesome open-source tool with a big and helpful community. You'll find numerous guides on how to create the perfect firmware for your keyboard.
-The core file in every config looks something like this. This is my keymap.c file for my QuattroZero.
+
+This below is my *keymap.c* file for my QuattroZero. The core file in every config looks something like this. 
 It looks intimidating but it's pretty simple. We are declaring different states and layers and explaining how they are constituted.
 
-```
+<script src="https://gist.github.com/MattiaSantoro/045ae88cde62b8ede8279aab4174287a.js"></script>
+
+<!-- 
+<div class="scrollable-code" markdown="1">
+
+```c
 #include QMK_KEYBOARD_H
 
 enum layers {
@@ -150,6 +193,7 @@ layer_state_t layer_state_set_user(layer_state_t state) {
 }
 
 ```
+</div> -->
 
 ### The Manufacturing
 The hands-on part. Let's begin!
@@ -159,7 +203,7 @@ I created laser-cutting machine compatible files with the help of Inventor and p
 
 Look at this beauty! My logo's engraving is my favorite part.
 
-<p style="text-align:center;"><img src="{{ "/assets/images/posts/40/laser1.jpg" | absolute_url }}" width="80%" hspace="5"></p>
+<!-- <p style="text-align:center;"><img src="{{ "/assets/images/posts/40/laser1.jpg" | absolute_url }}" width="80%" hspace="5"></p>
 
 <i class="far fa-file-alt"></i> Telling the laser machine what to do
 {: .notice--info}
@@ -184,8 +228,13 @@ Look at this beauty! My logo's engraving is my favorite part.
 
 <i class="far fa-file-alt"></i> The back is engraved with this website's logo!
 {: .notice--info}
-{: .text-justify}
+{: .text-justify} -->
 
+{% include gallery id="galleryLaserCutting" layout="half" %}
+
+<i class="far fa-file-alt"></i> The process of laser cutting and laser engraving the case!
+{: .notice--info}
+{: .text-justify}
 
 #### 3D Printing
 After that, I exported from Inventor the .stl file for the USB C Hub and proceeded with the print in multiple colors to see which one was my favorite. I went with white.
@@ -200,26 +249,29 @@ After that, I exported from Inventor the .stl file for the USB C Hub and proceed
 This part was tough. A lot to solder. The goal is to wire up each row and column and feed these wires into the microcontroller.
 With proper software, the microcontroller is able to identify the coordinates of the pressed key. To make sure there are no ghost clicks is important to have diodes paired with each key. This way current can flow only one way and we make sure that only one combination of row and column numbers corresponds to one key.
 
-
-
-<p style="text-align:center;"><img src="{{ "/assets/images/posts/40/before-soldering.jpg" | absolute_url }}" width="80%" hspace="5"></p>
+<!-- <p style="text-align:center;"><img src="{{ "/assets/images/posts/40/before-soldering.jpg" | absolute_url }}" width="80%" hspace="5"></p>
 
 <i class="far fa-file-alt"></i> Before soldering - fit test
 {: .notice--info}
 {: .text-justify}
 
-
-
 <p style="text-align:center;"><img src="{{ "/assets/images/posts/40/after-soldering.jpg" | absolute_url }}" width="80%" hspace="5"></p>
 
 <i class="far fa-file-alt"></i> After soldering - it works!
 {: .notice--info}
+{: .text-justify} -->
+
+{% include gallery id="gallerySoldering" layout="half" %}
+
+<i class="far fa-file-alt"></i> Before and after soldering!
+{: .notice--info}
 {: .text-justify}
+
 
 ### Building everything together
 This is the fun part of every project: the moment everything comes together. It is so satisfying to see the result of what some (a lot) hours in the free time can lead to. This was my favorite project so far and I can't wait to iterate and make some perfections!
 
-<p style="text-align:center;"><img src="{{ "/assets/images/posts/40/building-together.jpg" | absolute_url }}" width="100%" hspace="5"></p>
+<!-- <p style="text-align:center;"><img src="{{ "/assets/images/posts/40/building-together.jpg" | absolute_url }}" width="100%" hspace="5"></p>
 
 <i class="far fa-file-alt"></i> Ready to close the case
 {: .notice--info}
@@ -245,7 +297,14 @@ This is the fun part of every project: the moment everything comes together. It 
 
 <i class="far fa-file-alt"></i> The back is engraved with this website's logo!
 {: .notice--info}
+{: .text-justify} -->
+
+{% include gallery id="galleryFinal" layout="half" %}
+
+<i class="far fa-file-alt"></i> Assembling everything together!
+{: .notice--info}
 {: .text-justify}
+
 
 ## The Files
 Here can you find everything you'll need to complete your version of my design. Make sure to show me your results if you plan to do this yourself!

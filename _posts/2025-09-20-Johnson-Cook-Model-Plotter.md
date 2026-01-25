@@ -11,6 +11,22 @@ header:
   overlay_filter: 0.4
   caption: "A screenshot showing the web app in action!"
   teaser: /assets/images/posts/jc-plotter/overhead_teaser.png
+
+galleryLight:
+  - url: /assets/images/posts/jc-plotter/light-1.png
+    image_path: /assets/images/posts/jc-plotter/light-1.png
+    alt: "Light Mode"
+  - url: /assets/images/posts/jc-plotter/light-2.png
+    image_path: /assets/images/posts/jc-plotter/light-2.png
+    alt: "Light Mode"
+
+galleryDark:
+  - url: /assets/images/posts/jc-plotter/dark-1.png
+    image_path: /assets/images/posts/jc-plotter/dark-1.png
+    alt: "Dark Mode"
+  - url: /assets/images/posts/jc-plotter/dark-2.png
+    image_path: /assets/images/posts/jc-plotter/dark-2.png
+    alt: "Dark Mode"
 ---
 
 _In this post, I will present a project I worked on over the last few months. Months ago, when I was looking for a tool capable of plotting Johnson-Cook model curves based on Johnson-Cook parameters, I couldn't find one, so... I made one! Hopefully, my web app will come in handy for anyone who finds themselves in the same situation in the future! <br> Disclaimer: This is a niche application in the field of materials science engineering! But keep reading!_
@@ -60,22 +76,16 @@ Using the sidebar on the left, the parameters can be adjusted. The plotting mode
 The main section has three panels. The actual plot takes center stage. Below, there is a brief summary of the Johnson-Cook model, along with its equation. The last section serves as an acknowledgment and disclaimer, mentioning the tools used.
 
 ### Light Mode
-
-<p style="text-align:center;"><img src="{{ "/assets/images/posts/jc-plotter/light-1.png" | absolute_url }}" width="100%" hspace="5"></p>
-
-<p style="text-align:center;"><img src="{{ "/assets/images/posts/jc-plotter/light-2.png" | absolute_url }}" width="100%" hspace="5"></p>
+{% include gallery id="galleryLight" %}
 
 <i class="far fa-file-alt"></i> Light Mode! 
 {: .notice--info}
 {: .text-justify}
 
 ### Dark Mode
+{% include gallery id="galleryDark" %}
 
-<p style="text-align:center;"><img src="{{ "/assets/images/posts/jc-plotter/dark-1.png" | absolute_url }}" width="100%" hspace="5"></p>
-
-<p style="text-align:center;"><img src="{{ "/assets/images/posts/jc-plotter/dark-2.png" | absolute_url }}" width="100%" hspace="5"></p>
-
-<i class="far fa-file-alt"></i> Dark Mode! 
+<i class="far fa-file-alt"></i> Light Dark! 
 {: .notice--info}
 {: .text-justify}
 
