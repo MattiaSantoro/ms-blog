@@ -96,7 +96,9 @@ social:
 
 # Analytics
 analytics:
-  provider               : false #google-gtag # false (default), "google", "google-universal", "google-gtag", "custom"
+  provider               : custom #google-gtag # false (default), "google", "google-universal", "google-gtag", "custom"
+  goatcounter:
+      code: "matsan"
   # google:
   #   tracking_id          : G-CE058FHH3V
   #   anonymize_ip         : true # true, false (default)
