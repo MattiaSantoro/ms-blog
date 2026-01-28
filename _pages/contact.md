@@ -17,7 +17,7 @@ author_profile: true
       {% include secure-email.html 
          user="hi" 
          domain="matsan.it" 
-         reveal=true 
+         text='<i class="fas fa-envelope"></i> Show Address'
       %}
     </em>
   </strong>
