@@ -4,6 +4,7 @@
    class="secure-email" 
    data-user="{{ include.user }}" 
    data-domain="{{ include.domain }}"
+   {% if include.reveal %}data-reveal="true"{% endif %}
    rel="nofollow noopener noreferrer">
   {{ include.text | default: "Email Me" }}
 </a>
@@ -11,18 +12,24 @@
 <script>
   if (!window.secureEmailLoaded) {
     window.secureEmailLoaded = true;
+
     document.addEventListener('click', function(e) {
       if (e.target.closest('.secure-email')) {
         const link = e.target.closest('.secure-email');
         if (link.getAttribute('href') === '#') {
           e.preventDefault();
-          const user = link.getAttribute('data-user');
-          const domain = link.getAttribute('data-domain');
-          const address = user + '@' + domain;
+          const address = link.getAttribute('data-user') + '@' + link.getAttribute('data-domain');
           link.href = 'mailto:' + address;
           window.location.href = 'mailto:' + address;
         }
       }
+    });
+
+    document.addEventListener('DOMContentLoaded', function() {
+      const revealLinks = document.querySelectorAll('.secure-email[data-reveal="true"]');
+      revealLinks.forEach(function(link) {
+        link.innerText = link.getAttribute('data-user') + '@' + link.getAttribute('data-domain');
+      });
     });
   }
 </script>
