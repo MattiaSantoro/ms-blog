@@ -112,9 +112,12 @@ author:
   location         : "Munich, Germany"
   email            : #"email"
   links:
+    - label: "Contact"
+      url: "/contact/"
+      icon: "fas fa-fw fa-envelope-square"
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:hi@matsan.it"
+      #url: "mailto:...@..."
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/mattia-santoro"
@@ -137,9 +140,12 @@ author:
 # Site Footer
 footer:
   links:
+    - label: "Contact"
+      url: "/contact/"
+      icon: "fas fa-fw fa-envelope-square"
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      url: "mailto:hi@matsan.it"
+      #url: "mailto:...@..."
     - label: "Linkedin"
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/mattia-santoro"

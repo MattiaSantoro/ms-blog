@@ -1,0 +1,28 @@
+<!-- created on 28.01.2026, hiding email from scrapers -->
+
+<a href="#" 
+   class="secure-email" 
+   data-user="{{ include.user }}" 
+   data-domain="{{ include.domain }}"
+   rel="nofollow noopener noreferrer">
+  {{ include.text | default: "Email Me" }}
+</a>
+
+<script>
+  if (!window.secureEmailLoaded) {
+    window.secureEmailLoaded = true;
+    document.addEventListener('click', function(e) {
+      if (e.target.closest('.secure-email')) {
+        const link = e.target.closest('.secure-email');
+        if (link.getAttribute('href') === '#') {
+          e.preventDefault();
+          const user = link.getAttribute('data-user');
+          const domain = link.getAttribute('data-domain');
+          const address = user + '@' + domain;
+          link.href = 'mailto:' + address;
+          window.location.href = 'mailto:' + address;
+        }
+      }
+    });
+  }
+</script>
