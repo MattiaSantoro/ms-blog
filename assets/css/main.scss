@@ -5,6 +5,10 @@ search: false
 
 @charset "utf-8";
 
+/* Increase the maximum breakpoint from 1280px to 1400px */
+$x-large: 1400px; 
+$max-width: 1400px;
+
 @import "minimal-mistakes/skins/{{ site.minimal_mistakes_skin | default: 'default' }}"; // skin
 @import "minimal-mistakes"; // main partials
 
@@ -34,9 +38,23 @@ search: false
   transform: translateY(-5px); /* Lift effect */
 }
 
-/* Fix the teaser image */
+/* 1. Force the CONTAINER to be the master of dimensions */
 .archive__item-teaser {
-  margin-bottom: 0; /* Remove gap between image and text */
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16 / 9 !important;
+  max-height: none !important;
+  overflow: hidden;
+  margin-bottom: 0;
+}
+
+/* 2. Force the IMAGE to just fill that box */
+.archive__item-teaser img {
+  width: 100% !important;
+  height: 100% !important;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 0;
 }
 
 /* Text Padding */
