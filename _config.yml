@@ -108,7 +108,7 @@ analytics:
 author:
   name             : "Mattia Santoro"
   avatar           : "/assets/images/profile.jpeg"
-  bio              : "An Italian engineering student writing about nice things"
+  bio              : "Writing about Engineering, Curiosity, and the Space between." #"An Italian engineering student writing about nice things"
   location         : "Munich, Germany"
   email            : #"email"
   links:
