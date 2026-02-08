@@ -39,8 +39,8 @@ _In this post, I will present a project I worked on over the last few months. Mo
 {: .text-justify}
 
 ## App
-[Click here to head to the web app: **Johnson-Cook Model Plotter**!][1]
-<br>It may take up to 10-20 seconds to load the app after clicking the link.
+[Click here to head to the Johnson-Cook Model Plotter: **jc-plotter.matsan.it**][1]
+<br> _It may take up to 10-20 seconds to load the app after clicking the link._
 {: .notice--primary}
 
 ## Background
@@ -67,6 +67,11 @@ Considering how lightweight and resource-efficient the web app is, I was hoping 
 Starting out, I looked into free options to host the demo while researching better solutions (like self-hosting?).
 I considered [Render.com][5], but ultimately landed on [Koyeb.com][6]. These tools make it easy to deploy from a GitHub repository, but, as expected, the free plans are limited in terms of performance and fluidity.
 I will look into better (paid) options, but for now, I'm okay with having the demo app hosted there.
+
+**Update!**<br>
+<br>
+I moved the Johnson-Cook Model Plotter from traditional server-side hosting (like Koyeb, which I was using before) to a Client-Side WebAssembly architecture. Previously, every time a user performed a calculation on the website, the app had to send a request to a remote Linux server to perform the calculations, resulting in lags and limitations on the free plan, which degraded usability. <br>I migrated to [Cloudflare Pages][7] and [Pyodide][8], shifting the computations to the user's browser. Now, after an initial download on the first visit, the application downloads the necessary Python engine, allowing all the computations to remain on the user's device. Essentially, I moved to a Serverless Static Web App so that after the first download, the performance is the best possible without even needing external server access! <br>I am really happy that I took the time to find this elegant solution, which solved the negative points I had with the previous solution!
+{: .notice--success}
 
 ## Gallery
 Below, you can find some screenshots showing the app and its features. The app has both light and dark modes, which can be activated in the top right corner.
@@ -98,9 +103,11 @@ Feel free to contact me if you find this tool useful or if you have any suggesti
 
 <!-------------------------------- FOOTER --------------------------------->
 
-[1]: https://johnson-cook-model-plotter.koyeb.app/
+[1]: https://jc-plotter.matsan.it/
 [2]: https://panel.holoviz.org/
 [3]: https://matplotlib.org/
 [4]: https://numpy.org/
 [5]: https://render.com/
 [6]: https://www.koyeb.com/
+[7]: https://pages.cloudflare.com/
+[8]: https://pyodide.org/en/stable/
