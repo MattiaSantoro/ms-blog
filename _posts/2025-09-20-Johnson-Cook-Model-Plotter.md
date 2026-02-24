@@ -7,17 +7,17 @@ toc: true
 toc_sticky: true
 
 header:
-  overlay_image: /assets/images/posts/jc-plotter/overhead_teaser.png
+  overlay_image: /assets/images/posts/jc-plotter/jc-screenshot1.png
   overlay_filter: 0.4
   caption: "A screenshot showing the web app in action!"
-  teaser: /assets/images/posts/jc-plotter/overhead_teaser.png
+  teaser: /assets/images/posts/jc-plotter/jc-screenshot1.png
 
 galleryLight:
-  - url: /assets/images/posts/jc-plotter/light-1.png
-    image_path: /assets/images/posts/jc-plotter/light-1.png
+  - url: /assets/images/posts/jc-plotter/jc-screenshot1.png
+    image_path: /assets/images/posts/jc-plotter/jc-screenshot1.png
     alt: "Light Mode"
-  - url: /assets/images/posts/jc-plotter/light-2.png
-    image_path: /assets/images/posts/jc-plotter/light-2.png
+  - url: /assets/images/posts/jc-plotter/jc-screenshot2.png
+    image_path: /assets/images/posts/jc-plotter/jc-screenshot2.png
     alt: "Light Mode"
 
 galleryDark:
@@ -80,12 +80,14 @@ Using the sidebar on the left, the parameters can be adjusted. The plotting mode
 
 The main section has three panels. The actual plot takes center stage. Below, there is a brief summary of the Johnson-Cook model, along with its equation. The last section serves as an acknowledgment and disclaimer, mentioning the tools used.
 
-### Light Mode
+### Screenshots
 {% include gallery id="galleryLight" %}
 
+<!--
 <i class="far fa-file-alt"></i> Light Mode! 
 {: .notice--info}
 {: .text-justify}
+
 
 ### Dark Mode
 {% include gallery id="galleryDark" %}
@@ -93,6 +95,7 @@ The main section has three panels. The actual plot takes center stage. Below, th
 <i class="far fa-file-alt"></i> Light Dark! 
 {: .notice--info}
 {: .text-justify}
+-->
 
 ## Future
 I plan to release the web app as an open-source project with a public repository on GitHub. Until then, I'll continue working on it and preparing it for release.
