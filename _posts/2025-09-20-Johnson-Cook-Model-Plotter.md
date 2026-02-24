@@ -55,27 +55,9 @@ A typical plot of the Johnson-Cook model shows flow stress versus plastic strain
 While searching the internet for websites offering plots of Johnson-Cook curves based on given parameters, I could not find one.
 For that reason, I decided to create one myself and make it available to anyone, so that someone in my position in the future can take advantage of this resource.
 
-## Tools
-This project was also an opportunity for me to experiment with a tool that I had been interested in trying out for a while. This project was the perfect application, so I jumped in and started experimenting.
-
-The entire web application is written in **Python** and uses the [Panel][2] library (by HoloViz) for the dashboard and GUI. Panel makes it very easy to code and build good-looking dashboards, plotters, and other visualization tools. I can't recommend this enough!
-The other two key tools I used are [Matplotlib][3] (for creating the plots) and [NumPy][4] (for numerical computations).
-
-## Deploy
-Deploying the app and making it accessible on the Internet is the second phase of the project.
-Considering how lightweight and resource-efficient the web app is, I was hoping to find an easy hosting solution.
-
-Starting out, I looked into free options to host the demo while researching better solutions (like self-hosting?).
-I considered [Render.com][5], but ultimately landed on [Koyeb.com][6]. These tools make it easy to deploy from a GitHub repository, but, as expected, the free plans are limited in terms of performance and fluidity.
-I will look into better (paid) options, but for now, I'm okay with having the demo app hosted there.
-
-**Update!**<br>
-<br>
-I moved the Johnson-Cook Model Plotter from traditional server-side hosting (like Koyeb, which I was using before) to a Client-Side WebAssembly architecture. Previously, every time a user performed a calculation on the website, the app had to send a request to a remote Linux server to perform the calculations, resulting in lags and limitations on the free plan, which degraded usability. <br>I migrated to [Cloudflare Pages][7] and [Pyodide][8], shifting the computations to the user's browser. Now, after an initial download on the first visit, the application downloads the necessary Python engine, allowing all the computations to remain on the user's device. Essentially, I moved to a Serverless Static Web App so that after the first download, the performance is the best possible without even needing external server access! <br>I am really happy that I took the time to find this elegant solution, which solved the negative points I had with the previous solution!
-{: .notice--success}
-
-## Gallery
-Below, you can find some screenshots showing the app and its features. The app has both light and dark modes, which can be activated in the top right corner.
+## Front End
+Below, you can find some screenshots showing the app and its features.
+<!--The app has both light and dark modes, which can be activated in the top right corner. -->
 
 Using the sidebar on the left, the parameters can be adjusted. The plotting mode can be changed by selecting which quantity (temperature or strain rate) stays constant and which quantity varies.
 
@@ -97,6 +79,27 @@ The main section has three panels. The actual plot takes center stage. Below, th
 {: .notice--info}
 {: .text-justify}
 -->
+
+## Tools
+This project was an opportunity for me to experiment with a tool that I had been interested in trying out for a while. This project was the perfect application, so I jumped in and started experimenting.
+
+The entire web application is written in **Python** and uses the [Panel][2] library (by HoloViz) for the dashboard and GUI. Panel makes it very easy to code and build good-looking dashboards, plotters, and other visualization tools. I can't recommend this enough!
+The other two key tools I used are [Matplotlib][3] (for creating the plots) and [NumPy][4] (for numerical computations).
+
+## Deploy
+Deploying the app and making it accessible on the Internet is the second phase of the project.
+Considering how lightweight and resource-efficient the web app is, I was hoping to find an easy hosting solution.
+
+Starting out, I looked into free options to host the demo while researching better solutions (like self-hosting?).
+I considered [Render.com][5], but ultimately landed on [Koyeb.com][6]. These tools make it easy to deploy from a GitHub repository, but, as expected, the free plans are limited in terms of performance and fluidity.
+I will look into better (paid) options, but for now, I'm okay with having the demo app hosted there.
+
+**Update!**<br>
+<br>
+I moved the Johnson-Cook Model Plotter from traditional server-side hosting (like Koyeb, which I was using before) to a Client-Side WebAssembly architecture. Previously, every time a user performed a calculation on the website, the app had to send a request to a remote Linux server to perform the calculations, resulting in lags and limitations on the free plan, which degraded usability. <br>I migrated to [Cloudflare Pages][7] and [Pyodide][8], shifting the computations to the user's browser. Now, after an initial download on the first visit, the application downloads the necessary Python engine, allowing all the computations to remain on the user's device. Essentially, I moved to a Serverless Static Web App so that after the first download, the performance is the best possible without even needing external server access! <br>I am really happy that I took the time to find this elegant solution, which solved the negative points I had with the previous solution!
+{: .notice--success}
+
+
 
 ## Future
 I plan to release the web app as an open-source project with a public repository on GitHub. Until then, I'll continue working on it and preparing it for release.
