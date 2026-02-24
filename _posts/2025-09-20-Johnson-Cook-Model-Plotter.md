@@ -32,16 +32,17 @@ galleryDark:
 _In this post, I will present a project I worked on over the last few months. Months ago, when I was looking for a tool capable of plotting Johnson-Cook model curves based on Johnson-Cook parameters, I couldn't find one, so... I made one! Hopefully, my web app will come in handy for anyone who finds themselves in the same situation in the future! <br> Disclaimer: This is a niche application in the field of materials science engineering! But keep reading!_
 {: .notice--primary}
 
-<p style="text-align:center;"><img src="{{ "/assets/images/posts/jc-plotter/jc-plotter-logo.png" | absolute_url }}" width="30%" hspace="5"></p>
-
-<i class="far fa-file-alt"></i> Logo and favicon of the web app resembling a stress-strain curve! 
-{: .notice--info}
-{: .text-justify}
 
 ## App
 [Click here to head to the Johnson-Cook Model Plotter: **jc-plotter.matsan.it**][1]
 <br> _It may take up to 10-20 seconds to load the app after clicking the link._
-{: .notice--primary}
+{: .notice--success}
+
+<p style="text-align:center;"><img src="{{ "/assets/images/posts/jc-plotter/jc-plotter-logo.png" | absolute_url }}" width="30%" hspace="5"></p>
+
+<i class="far fa-file-alt"></i> Logo and favicon of the web app resembling a stress-strain curve! 
+{: .notice--success}
+{: .text-center}
 
 ## Background
 A few months ago, I was working on modeling the behavior of metals, specifically titanium alloys, under extreme conditions.
