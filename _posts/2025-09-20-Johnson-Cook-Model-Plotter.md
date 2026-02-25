@@ -34,9 +34,10 @@ _In this post, I will present a project I worked on over the last few months. Mo
 
 
 ## App
-[Click here to head to the Johnson-Cook Model Plotter: **jc-plotter.matsan.it**][1]
+[Click here to head to the Johnson-Cook Model Plotter: <br> **jc-plotter.matsan.it**][1]
 <br> _It may take up to 10-20 seconds to load the app after clicking the link._
 {: .notice--success}
+{: .text-center}
 
 <p style="text-align:center;"><img src="{{ "/assets/images/posts/jc-plotter/jc-plotter-logo.png" | absolute_url }}" width="30%" hspace="5"></p>
 
